@@ -1,0 +1,448 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000349;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header__superior {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.sesion a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.sesion a i {
+    margin-right: 5px;
+}
+
+/* Menu */
+.menu input {
+    display: none;
+}
+
+.menu label {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.container__menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+/* Menú principal */
+.menu nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Elimina las rayas debajo de las palabras */
+}
+
+.menu nav ul li a:hover {
+    background: #24afff;
+    color: #000349;
+    border-radius: 5px;
+    text-decoration: none; /* Asegura que no aparezcan rayas al pasar el cursor */
+}
+
+/* Submenu */
+.menu nav ul li ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu nav ul li ul li a {
+    color: #000349;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.menu nav ul li ul li a:hover {
+    background: #0320ff;
+    color: white;
+}
+
+/* Tarjetas */
+.tarjetas {
+    padding: 100px 20px 50px;
+    background: #f9f9f9;
+    margin-top: 120px; /* Añade un margen superior para separar del menú */
+}
+
+.tarjetas .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.tarjetas .card:hover {
+    transform: scale(1.05);
+}
+
+.tarjetas .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tarjetas .card h3 {
+    margin-top: 15px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Sobre Nosotros */
+.nosotros {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.nosotros .titulo2 {
+    font-size: 36px;
+    color: #000349;
+    margin-bottom: 20px;
+}
+
+.nosotros .descrip {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros .descrip p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.nosotros .btn {
+    background: #234F1E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.nosotros .btn:hover {
+    background: #2935df;
+    color: #f4f4f4;
+}
+
+/* Footer */
+.footer {
+    background-color: #000349;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.footer img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #f8c146;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #d4a937;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Botones */
+.footer .btn {
+    border-radius: 30px;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    text-transform: uppercase;
+}
+
+.footer .btn-outline-light {
+    border: 1px solid #f8c146;
+    color: #f8c146;
+}
+
+.footer .btn-outline-light:hover {
+    background-color: #f8c146;
+    color: #000349;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .header__superior {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu label {
+        display: block;
+    }
+
+    .menu nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #000349;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+
+    .menu input:checked ~ nav ul {
+        display: flex;
+    }
+
+    .menu nav ul li {
+        text-align: center;
+    }
+
+    .tarjetas .card {
+        margin-bottom: 20px;
+    }
+
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+}
+h1 {
+    font-size: 102px;
+    text-align: center;
+    margin-top: 200px;
+    color: #000349;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    
+   
+
+}
+
+.parallax-1{
+    background: url('../img/istockphoto-119926339-612x612.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax-inner{
+    padding: 10% 0;
+}
+
+/* MODAL */
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.modal{
+    position: fixed;
+    /* POSICION FIJA */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    /* esto es para que aparezca la barrita de la parte izquierda de la pantalla para poder ver la demas informacion sobre nuestro modal */
+    background: rgba(0, 0, 0, 0.7);
+    /* este es el fondo de color gris que se pone la pagina cuando el modal aparece */
+
+    display: none;
+    /* esto hace que cuando se abra la pagina no solo se muesre el modal, si no que tengamos que definir la funcionalidad de el boton abrir modal para que este se pueda abrir */
+
+    animation: aparecer .3s linear;
+
+}
+
+.modal .fondoModal{
+    width: 97%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.modal .modal-content{
+    z-index: 1000;
+    position: absolute;
+    /* AQUI LO CENTRAMOS */
+    width: 60%;
+    /* TODO EL COMTENIDO DEL MODAL VA A SER 60% */
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 20px;
+    max-width: 660px;
+    
+    
+
+}
+.title-modal{
+    padding: 10px;
+    font-size: 30px; 
+    
+}
+
+.modal-body{
+    border-radius: 0px 0px 10px 10px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    margin-bottom: 25px;
+
+}
+
+/* .imgmodal{
+    width: 90%;
+    max-width: 300px;
+    border-radius: 5px;
+} */
+.modal .modal-content .modal-header{
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modal .modal-content .modal-header .btn-close-modal{
+    background-color: none;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.modal .modal-content .modal-header .btn-close-modal::after{
+    content: "X";   
+}
+
+.modal .modal-content .modal-header .btn-close-modal:hover{
+    cursor: pointer;
+    
+}
+
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+/* ESTO ES PARA LA ANIMACION DE LA APERTURA DEL MODAL */
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+/* Y QUE VALLA HACIA EL OPACIDAD 1  */
+to{
+    opacity: 1;
+    }
+}
+
+

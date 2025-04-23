@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALOJA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="img/hotel.ico">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header__superior">
+        <div class="logo">
+          <img src="img/logo (1).png" alt="logo">
+        </div>
+        <div class="container__menu">
+          <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label for="check__menu" id="label__check">
+              <i class="fas fa-bars icon__menu"></i>
+            </label>
+            <nav>
+              <ul>
+                <li><a href="Index.html" id="selected">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a>
+                  
+                </li>
+                <li><a href="habitaciones.html">Habitaciones</a>
+                  
+                </li>
+                <li><a href="#">Ubicación</a>
+                  <ul>
+                    <li><a href="#">Dirección</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contacto">Contactos</a>
+                  
+                </li>
+                <li><a href="#">Administrador</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+
+    <!-- habitaciones -->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 80px 20px 20px 20px ;
+            gap: 20px;
+            align-items: center;
+            /* height: 100vh; */
+            background-color: #f8f8f8;
+            flex-direction: column;
+        }
+
+
+
+        .card{
+            width: 90%;
+            background: #fff;
+            border-radius: 10px;
+            max-width: 1000px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+        }
+        .card img{
+            width: 40%;
+            height: auto;
+            object-fit: cover;
+        }
+        .card-content{
+            width: 60%;
+            padding: 15px;
+            display: flex ;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-title{
+            font-size: 20px;
+            font-weight: bold;
+            color: #0071c2;
+        }
+        .rating{
+            color: #f8b400;
+        }
+        .info{
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .price{
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+        }
+        .btn{
+            display: block;
+            background: #0071c2;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="img/hab1.jpg" alt="Hotel Aloja">
+        <div class="card-content">
+            <div class="card-title"> Habitacion Doble Premium<span class="rating">★★★★★</span> </div>
+            <div class="info">Ubicacion centrica - cerca del metro</div>
+            <div class="info">Desayuno incluido - modificacion o cancelacion gratis</div>
+            <div class="info">Pago por adelantado</div>
+            <div class="price">COP 150.000$</div>
+            <button class="btn" id="open_modal">Ver Mas Información</button>
+
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/hab2.jpg" alt="Hotel Aloja">
+        <div class="card-content">
+            <div class="card-title">Habitacion Doble<span class="rating">★★★★★</span> </div>
+            <div class="info">Ubicacion centrica- cerca del metro</div>
+            <div class="info">Desayuno incluido- modificacion de reserva gratis</div>
+            <div class="info">Pago por adelantado</div>
+            <div class="price">COP 110.000$</div>
+            <button class="btn" id="open_modal">Ver Mas Información</button>
+
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/hab3.jpg" alt="Hotel Aloja">
+        <div class="card-content">
+            <div class="card-title">Habitacion Invidual<span class="rating">★★★★★</span> </div>
+            <div class="info">Ubicacion centrica- cerca del metro</div>
+            <div class="info">Desayuno incluido- cancelacion gratis</div>
+            <div class="info">Pago por adelantado</div>
+            <div class="price">COP 120.000$</div>
+            <button class="btn" id="open_modal">Ver Mas Información</button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/habb4.jpg" alt="Hotel Aloja">
+        <div class="card-content">
+            <div class="card-title">Habitacion Suite<span class="rating">★★★★★</span> </div>
+            <div class="info">Ubicacion centrica- cerca del metro</div>
+            <div class="info">Desayuno incluido- cancelacion gratis</div>
+            <div class="info">Sin pago por adelantado</div>
+            <div class="price">COP 133.280</div>
+            <button class="btn" id="open_modal">Ver Mas Información</button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/hab5.jpg" alt="Hotel Aloja">
+        <div class="card-content">
+            <div class="card-title"> Habitacion Inidivual Premium<span class="rating">★★★★★</span> </div>
+            <div class="info">Ubicacion centrica - cerca del metro</div>
+            <div class="info">Desayuno incluido - modificacion y cancelacion gratis</div>
+            <div class="info">Pago por adelantado</div>
+            <div class="price">COP 150.000$</div>
+            <button class="btn" id="open_modal">Ver Mas Información</button>
+
+        </div>
+    </div>
+
+    <!-- COMIENZA EL CODIGO DEL MODAL -->
+
+    <div class="container">
+       <!-- ESTE DIV CONTIENE TODO EL MODAL -->
+
+    <!-- EL FONDO -->
+
+    <div class="modal" id="modal">
+      <div class="fondoModal" id="fondoModal"></div>
+
+       <!-- CONTENIDO DEL MODAL Y HAY 2 SECCIONES, EL EN CABEZADO= HEADER Y EL BODY=TEXTO -->
+
+       <div class="modal-content">
+        <div class="modal-header">
+            <!-- ADENTRO DEL ENCABEZADO ESTA EL TITULO Y EL BOTON DE CERRAR -->
+            <div class="title-modal">Habitacion Doble Premium</div>
+            <button class="btn-close-modal" id="close_Modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <!-- <img src="img/hab1.jpg" class="imgmodal"> -->
+          <h3>Descripción.</h3>
+          <p> Disfruta del confort y la elegancia en nuestra Habitación Doble Estándar, diseñada para ofrecer una estancia placentera tanto a viajeros de negocios como a turistas. La habitación cuenta con  dos camas individuales, ropa de cama de alta calidad, y una decoración moderna con toques acogedores.
+            
+            Equipada con aire acondicionado, televisor de pantalla plana con canales por cable, escritorio de trabajo  y caja fuerte. El baño privado dispone de ducha tipo lluvia, secador de cabello, toallas suaves y artículos de tocador de cortesía.
+            
+            Algunas habitaciones ofrecen vistas a la ciudad o al jardín interior. Servicio a la habitación disponible las 24 horas.
+            </p>
+            <h4>Servicios Incluidos:</h4>
+            <ul>
+              <li>Balcon</li>
+              <li>Baño Privado</li>
+              <li>Ducha</li>
+              <li>Aire acondicionado</li>
+              <li>Tv pantalla plana</li>
+              <li>Ascensor</li>
+              <li>Recepcion 24 horas</li>
+              <li>Servicio de Lavanderia</li>
+              <li>Desayuno y Cena</li>
+            </ul>
+      </div>
+  </div>
+</div>
+
+
+</div>
+<script src="JS/main.js"></script>
+
+    Footer
+    <footer class="footer bg-dark text-white py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo y Dirección  -->
+          <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <img src="./img/logo (1).png" alt="Hotel Aloja" class="img-fluid mb-3" style="max-width: 150px;">
+            <p>Hotel Aloja RTN: 12345</p>
+            <p>Calle 10 # 5-30</p>
+            <p>Bogotá, Colombia</p> 
+          </div>
+<!-- 
+          Botones de contacto -->
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="d-flex flex-column gap-2">
+              <a href="https://wa.me/573001234567" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-whatsapp me-2"></i> WhatsApp
+              </a>
+              <a href="tel:+573001234567" class="btn btn-outline-light btn-sm"> -->
+                <i class="fas fa-phone-alt me-2"></i> Llámanos
+              </a>
+            </div>
+          </div>
+
+          <!-- Redes Sociales y Contacto -->
+          <div class="col-md-4 text-center text-md-end"> 
+            <h6 class="fw-bold">Síguenos en</h6>
+            <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
+              <a href="https://www.facebook.com/" class="text-white" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="text-white" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://twitter.com/" class="text-white" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a> 
+            </div>
+            <p class="mb-0">Escríbenos</p>
+            <a href="mailto:info@hotelojo.com" class="text-white">info@hotelojo.com</a>
+          </div>
+        </div> 
+        <div class="text-center mt-4">
+          <p class="mb-0">© 2025 Hotel Aloja. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+

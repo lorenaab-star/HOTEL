@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALOJA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="img/hotel.ico">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header__superior">
+        <div class="logo">
+          <img src="img/logo (1).png" alt="logo">
+        </div>
+        <div class="container__menu">
+          <div class="menu">
+            <input type="checkbox" id="check__menu">
+            <label for="check__menu" id="label__check">
+              <i class="fas fa-bars icon__menu"></i>
+            </label>
+            <nav>
+              <ul>
+                <li><a href="Index.html" id="selected">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li><a href="habitaciones.html">Habitaciones</a>
+                 
+                </li>
+                <li><a href="#">Ubicación</a>
+                  <ul>
+                    <li><a href="#">Dirección</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contacto">Contactos</a>
+                 
+                </li>
+                <li><a href="#">Administrador</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+   
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      border-left: 6px solid #3498db;
+      padding-left: 15px;
+      margin-bottom: 15px;
+    }
+
+    .valores-lista {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .valores-lista li {
+      padding: 8px 0;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .valores-lista li::before {
+      content: "✓";
+      color: #3498db;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="section">
+      <h1>Sobre Nosotros</h1>
+      <p>
+        Bienvenidos a <strong>Hotel Aloja</strong>, un refugio de elegancia, confort y calidez ubicado en el corazón de nuestra región. Desde nuestros inicios, hemos trabajado con pasión para brindar a cada huésped una experiencia única, donde la atención personalizada y el compromiso con la excelencia hacen la diferencia.
+      </p>
+      <p>
+        En <strong>Hotel Aloja</strong>, no solo ofrecemos habitaciones y servicios, sino experiencias memorables. Nuestro equipo está comprometido con la hospitalidad auténtica, creando un ambiente familiar y acogedor. Combinamos diseño moderno con detalles locales, permitiendo que cada visita sea una conexión con la cultura y belleza de nuestra tierra.
+      </p>
+      <p>
+        Ya sea que viajes por placer o negocios, aquí encontrarás un lugar donde descansar, inspirarte y disfrutar del verdadero significado de sentirse en casa.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Visión</h2>
+      <p>
+        Ser reconocidos como uno de los hoteles más acogedores y sostenibles de la región, destacando por nuestro servicio excepcional, innovación constante y respeto por el entorno natural y cultural.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Misión</h2>
+      <p>
+        Brindar a nuestros huéspedes una experiencia inolvidable, basada en la calidad del servicio, la calidez humana y un entorno cuidadosamente diseñado, asegurando bienestar, descanso y satisfacción total durante su estadía.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Valores</h2>
+      <ul class="valores-lista">
+        <li>Hospitalidad auténtica: Cada huésped es tratado como parte de nuestra familia.</li>
+        <li>Calidad y excelencia: Nos esforzamos por superar las expectativas en cada detalle.</li>
+        <li>Sostenibilidad: Cuidamos el medio ambiente y promovemos prácticas responsables.</li>
+        <li>Respeto: Valoramos la diversidad y fomentamos un trato amable y justo.</li>
+        <li>Innovación: Buscamos constantemente mejorar y ofrecer nuevas experiencias.</li>
+      </ul>
+    </div>
+    <!-- AQUI SE CIERRA EL DIV DEL CONTAINER -->
+  </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5" id="contacto">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo y Dirección -->
+          <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <img src="./img/logo (1).png" alt="Hotel Aloja" class="img-fluid mb-3" style="max-width: 150px;">
+            <p>Hotel Aloja RTN: 12345</p>
+            <p>Calle 10 # 5-30</p>
+            <p>Bogotá, Colombia</p>
+          </div>
+
+          <!-- Botones de contacto -->
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="d-flex flex-column gap-2">
+              <a href="https://wa.me/573001234567" class="btn btn-outline-light btn-sm" target="_blank">
+                <i class="fab fa-whatsapp me-2"></i> WhatsApp
+              </a>
+              <a href="tel:+573001234567" class="btn btn-outline-light btn-sm">
+                <i class="fas fa-phone-alt me-2"></i> Llámanos
+              </a>
+            </div>
+          </div>
+
+          <!-- Redes Sociales y Contacto -->
+          <div class="col-md-4 text-center text-md-end">
+            <h6 class="fw-bold">Síguenos en</h6>
+            <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
+              <a href="https://www.facebook.com/" class="text-white" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="text-white" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://twitter.com/" class="text-white" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </div>
+            <p class="mb-0">Escríbenos</p>
+            <a href="mailto:info@hotelojo.com" class="text-white">info@hotelojo.com</a>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p class="mb-0">© 2025 Hotel Aloja. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
